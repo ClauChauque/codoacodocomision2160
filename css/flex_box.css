@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Dosis:wght@300&display=swap');
+
+body{
+    overflow: hidden; /*oculta el overclow*/
+}
+
+.principal{
+    display: flex; /*por defecto se usa el display: box*/
+    flex-wrap: wrap; /*envia a los elementos hacia abajo*/
+    justify-content: center; /*justificado en el centro*/
+    justify-content: flex-end; /*justificado al final del borde/del lado derecho*/
+    justify-content: space-around; /*justificado con un espacio entre los bloques, funciona siempre y cuando haya espacio ente los elementos*/
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.cuadro{
+    background-color: rgb(255, 0, 170);
+    width: 20%;
+    /*height: 200px;
+    /*float: left; /*siempre se tiene en cuenta el 100% de la pantalla para calcular las medidas.
+    border: 80px solid yellow;
+    box-sizing: border-box; /*coloca al elemento dentro de la caja*/
+}
+.cuadro p{
+    font-size: x-large;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*PSEUDOCLASES*/
+.cuadro p::before{ /*se indica que en el contenido inicial no puede copiarse*/
+    content: 'A mi no me puedes copiar';
+}
+.cuadro p::after{ /*se indica que en el contenido final no puede copiarse*/
+    content: 'A mi tampoco me puedes copiar';
+}
+.cuadro p::first-letter{
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: teal;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.letra{
+    font-family: 'Dosis', sans-serif;
+}

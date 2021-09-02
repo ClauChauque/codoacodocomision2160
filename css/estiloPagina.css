@@ -1,3 +1,7 @@
+*{
+    margin: 0px; /*se eliminan los margenes para darles forma después*/
+}
+
 header{
     background-image: url('../img/header.jpeg');
     /* background-repeat: no-repeat; */
@@ -30,10 +34,27 @@ nav ol li{
     background-color: rgb(16, 130, 230);
     margin: 5px;
     display: inline;
-    padding: 10px;
+    padding: 15px;
     
 }
+nav ol li a{
+    text-decoration: none;
+    color: black;
+}
+
 article h2{
     text-align: center;
    
+}
+body{
+    overflow: hidden;
+}
+
+footer{
+    background-color: teal;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
 }
