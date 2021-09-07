@@ -1,0 +1,79 @@
+#mano{
+    color: rgb(223, 223, 50);
+    animation: mano;
+    animation-duration: 5s;
+}
+@keyframes mano {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#meteoro{
+    color:  lightcoral;
+    animation-name: meteoro;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    position: absolute;
+    left: 250px;
+}
+@keyframes meteoro{
+    from{color: crimson; top: 50px;} /*principio*/
+    to{color: rgb(117, 1, 1); top: 250px;} /*fin*/
+}
+
+.cuadros{
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+#uno, #tres, #cinco{
+    background-color: darkslategrey;
+    color: white;
+    position: relative;
+    top: 0px;
+    animation: mover;
+    animation-duration: 5s;
+}
+@keyframes mover{
+    25% {top: 200px;}
+    50% {left: 220px;}
+    75% {top: 0%;}
+    100% {left: 20px;}
+}
+#dos, #cuatro, #seis{
+    position: relative;
+    animation-name: mover, meteoro; /*doble animacion*/
+    animation-duration: 5s, 6s;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s, 5s;
+}
+
+ul li{
+    display: inline;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+ul li:hover{
+    animation-name: menu;
+    animation-duration: 1s;
+}
+@keyframes menu{
+    0%{
+        padding: 10px;
+        background-color: yellow;
+        color: black;
+        cursor: pointer;
+    }
+    100% {
+        padding: 15px;
+        background-color: darkgreen;
+        color: yellow;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 50px;
+    }
+}
