@@ -6,7 +6,9 @@
 .rojo{
     background-color: red;
     color: yellow;
-    width: 25%;
-    height: 320px;
+    width: 20%;
+    height: 350px;
     float: left;
+    margin: 10px;
+    font-size: xx-large;
 }
