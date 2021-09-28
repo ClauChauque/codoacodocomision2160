@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!--El link de boostrap siempre se coloca antes del link de css, es decir, bajo tittle-->
+    <link rel="stylesheet" href="../css/boostrap.css">
+</head>
+
+<!--framework que proporciona estilos/documentos en html-->
+<!--Es un sistema de grillas que ocupa 12 columnas. -->
+<!--Bootstrap facilita estilizar a partir de llamadas sencillas en las calses-->
+
+<body>  <!--class="bg-primary" ..... bg-Background color, primary-azul intenso-->
+    <div class="containter mb-5">
+
+<!--Navbar. ejemplo traido de bootstrap para crear un menu rápdio-->
+<!-- ......................................................................................-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+<!-- ......................................................................................-->
+
+        <h1 class="text-center">Boostrap</h1>
+        
+        <div class="row">
+            <!--el -6 indica que va a ocupar la mitad de la pagina; p=padding; m=margin-->
+            <div class="col-5 bg-danger p-2 m-3">1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, illum sed excepturi dolorum dolore asperiores quod, ea quibusdam temporibus, incidunt suscipit. Delectus rem iste incidunt atque. Reiciendis vel accusamus doloremque?</div>
+            <div class="col-6 bg-secondary p-2 m-3"> 2-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus asperiores voluptates magni. Maxime dolores, dolorem voluptatibus sapiente repellendus, quibusdam sunt quisquam impedit distinctio officiis perferendis voluptas unde dolore enim. Earum.</div>
+            <div class="col-8 bg-primary p-2 m-3">3-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, delectus ipsa? Voluptates fuga culpa quia! Pariatur tempore fugiat assumenda quaerat est laboriosam sunt distinctio exercitationem deserunt, minus iste aperiam dicta.</div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <img src="" alt="">
+            </div>
+            <div class="col-9 text-white">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ullam ut libero repudiandae dolores. Temporibus ut itaque exercitationem, dolorem dolor rem suscipit? Provident temporibus eum debitis, excepturi quo ratione eos.</p>
+            </div>
+            <div class="col-3 text-white">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem velit dolores qui temporibus, recusandae hic dolor incidunt sit id ullam eius deserunt? Adipisci itaque veritatis et. Magni exercitationem unde reiciendis?</p>
+            </div>
+            <div class="col-3 text-white">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis assumenda porro perferendis, pariatur voluptas, laboriosam maiores dicta nemo sequi modi illo atque omnis tempore nostrum, culpa accusamus fugit error architecto?</p>
+            </div>
+            <div class="col-3 text-white">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid illum consequatur error unde assumenda repellat tempore quibusdam, incidunt dolore temporibus esse expedita id itaque est tenetur, harum voluptate natus.</p>
+            </div>
+        </div>
+    
+
+<!--Ejemplo traido de bootstrap-->
+
+        <div class="row">
+            <div class="col-8 d-flex align-items-center border border-primary text-white">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa perspiciatis illum libero quia voluptates minus provident, distinctio qui vel placeat quo incidunt molestiae repudiandae iusto autem molestias repellat ea.</p>
+            </div>
+
+            <div class="card col-4">
+                <img src="../img/20210220_191958.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ciudad</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+
+            <div class="card col-4">
+                <img src="../img/20210220_191958.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ciudad</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="../img/20210220_191958.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ciudad</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img src="../img/20210220_191958.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ciudad</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="" class="btn btn-primary">Mi boton</a>
+    <div>
+    <footer class="bg-black text-white text-center pt-5 fixed-bottom">Creado por Claudia Chauque</footer>
+    </div>
+</body>
+</html>
