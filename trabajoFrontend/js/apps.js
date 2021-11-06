@@ -3,6 +3,7 @@ let seccion = document.getElementById("section");
 const comprarTickets=()=>{
     seccion.innerHTML=`
         <div class="container">
+        <br>
             <div class="row">
                 <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
                     <div class="card-group">
@@ -110,7 +111,6 @@ const comprarTickets=()=>{
                             </div>
                         </div>
                     </form>
-                    <br>
                     <br>
                     <br>
                     <br>
