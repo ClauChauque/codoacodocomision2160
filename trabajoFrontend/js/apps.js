@@ -33,12 +33,14 @@ const comprarTickets=()=>{
                     </div>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col text-uppercase text-center">
                     <small>Venta</small>
                     <h2>Valor de ticket $200</h2>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
                     <form>
@@ -51,9 +53,11 @@ const comprarTickets=()=>{
                                 <input type="text" class="form-control" placeholder="Apellido">
                             </div>
                             </div>
+                            <br>
                             <div class="form-group col-12 col-md-12">
                                 <input type="email" class="form-control" placeholder="Correo">
                             </div>
+                            <br>
                             <div class="d-flex">
                             <div class="form-group col-12 col-md-6">
                                 <label for="">Cantidad</label>
@@ -69,6 +73,7 @@ const comprarTickets=()=>{
                             </div>
                             </div>
                         </div>
+                        <br>
                         <div class="form-row">
                             <div class="form-group col">
                                 <div id="totalCompra" class="alert alert-primary" role="alert">
@@ -84,6 +89,7 @@ const comprarTickets=()=>{
                                 <button type="button" id="botonCalcular" class="btnjs btn-codo btn-block" 
                                 data-bs-toggle="modal" data-bs-target="#exampleModal" 
                                 >Resumen</button>
+                                <br>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -104,6 +110,11 @@ const comprarTickets=()=>{
                             </div>
                         </div>
                     </form>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>

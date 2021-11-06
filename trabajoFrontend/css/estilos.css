@@ -40,6 +40,7 @@
     color: white;
 }
 .footer{
+    padding-top: 13px;
     background-color: rgb(9, 41, 102);
     color: white;
 }
@@ -59,4 +60,5 @@
     width: 97%;
     height: 100%;
     border-radius: 5px;
+    margin: 2%;
 }
