@@ -43,3 +43,20 @@
     background-color: rgb(9, 41, 102);
     color: white;
 }
+
+/* MODIFICACION DE ESTILOS EN JS */
+.cardTrainee{
+    border: rgb(127, 253, 236) !important;
+    border-style: solid !important;
+    
+}
+
+.btnjs{
+    background-color: rgb(149, 221, 76);
+    color: white;
+    border: transparent;
+    margin: 3px;
+    width: 97%;
+    height: 100%;
+    border-radius: 5px;
+}

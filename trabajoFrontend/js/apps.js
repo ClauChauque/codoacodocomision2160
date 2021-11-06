@@ -15,7 +15,7 @@ const comprarTickets=()=>{
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body border border-primary mr-1">
+                            <div class="cardTrainee card-body mr-1">
                                     <h5 class="card-title text-center">Trainee</h5> 
                                     <p class="card-text text-center">Tienen un decuento</p>                           
                                     <p class="card-title text-center font-weight-bold">50%</p>                           
@@ -23,7 +23,7 @@ const comprarTickets=()=>{
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body border border-primary mr-1">
+                            <div class="card-body border border-warning mr-1">
                                     <h5 class="card-title text-center">Junior</h5> 
                                     <p class="card-text text-center">Tienen un decuento</p>                           
                                     <p class="card-title text-center font-weight-bold">15%</p>                           
@@ -36,7 +36,7 @@ const comprarTickets=()=>{
             <div class="row">
                 <div class="col text-uppercase text-center">
                     <small>Venta</small>
-                    <h2>Valor de tcket $200</h2>
+                    <h2>Valor de ticket $200</h2>
                 </div>
             </div>
             <div class="row">
@@ -78,11 +78,11 @@ const comprarTickets=()=>{
                         </div>
                         <div class="form-row d-flex">
                             <div class="form-group col">
-                                <button type="reset" onclick="limpiar()" class="btn btn-codo btn-block">Borrar</button>
+                                <button type="reset" onclick="limpiar()" class="btnjs btn-codo btn-block">Borrar</button>
                             </div>
                             <div class="form-group col">
-                                <button type="button" id="botonCalcular" class="btn btn-codo btn-block" 
-                                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                <button type="button" id="botonCalcular" class="btnjs btn-codo btn-block" 
+                                data-bs-toggle="modal" data-bs-target="#exampleModal" 
                                 >Resumen</button>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -114,7 +114,7 @@ const comprarTickets=()=>{
         let inputs = document.querySelectorAll("input");
         let descuento = document.querySelector("#inputState").value;
 
-        console.log(inputs[0]);
+        console.log(inputs);
         let comprador={
             nombre:inputs[0].value,
             apellido:inputs[1].value,
@@ -133,15 +133,6 @@ const calcularValor=(desc,cantEnt,comp)=>{
         numT.innerHTML+=crearNumTicket();
     }
     let modal = document.querySelector(".modal-body");
-    modal.innerHTML=`
-        <p>Nombre: ${comp.nombre}</p>
-        <p>Apellido: ${comp.apellido}</p>
-        <p>Correo: ${comp.correo}</p>
-        <p>Categoría: ${desc}</p>
-        <p>Cantidad de entradas: ${comp.cantidad}</p>
-        <p>Descuento: ${descuento}</p>
-        <p>Total a pagar: ${resultado}</p>
-    `;
     let alert = document.querySelector("#totalCompra"); 
     if(desc == "estudiante"){
         resultado=(cantEnt * 200)*0.2;
@@ -159,6 +150,15 @@ const calcularValor=(desc,cantEnt,comp)=>{
         alert.innerHTML="Total a pagar: $"
         alert.innerHTML+=resultado;
     }
+    modal.innerHTML=`
+        <p>Nombre: ${comp.nombre}</p>
+        <p>Apellido: ${comp.apellido}</p>
+        <p>Correo: ${comp.correo}</p>
+        <p>Categoría: ${desc}</p>
+        <p>Cantidad de entradas: ${comp.cantidad}</p>
+        <p>Descuento: ${descuento}</p>
+        <p>Total a pagar: ${resultado}</p>
+    `;
 };
 
 //Math.random da numeros aleatoreos, generalmente flotantes, Math.floor devuelve numeros enteros
