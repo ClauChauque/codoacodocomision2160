@@ -1,7 +1,7 @@
 package primer_aplicacion;
 
 public class Juego {
-    //Getters y Setters para las variables privadas "puntos" y "vidas"
+    //Metodos Getters y Setters para las variables privadas "puntos" y "vidas"
     //Botón derecho, Insert Code, Getter and Setter, seleccionar variables, Generate
             public int getPuntos() {
                 return puntos;

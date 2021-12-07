@@ -1,4 +1,6 @@
 package primer_aplicacion;
+//Se importa el paquete Accesorios para usar el constructor Auto
+import Accesorios.Auto;
 
 public class Primer_aplicacion {
     public static void main(String[] args) { //Dentro de este metodo se ejecuta lo que es la aplicación
@@ -21,7 +23,7 @@ public class Primer_aplicacion {
         } else {
             System.out.println("No usaremos paraguas");
         }
-        //Uso del constructor "Juego"
+        //Uso del constructor Juego para crear nuevo objeto "jugador"
         Juego jugador = new Juego(0,3,"Mario","Hongos","Luigi");
         Juego jugador2 = new Juego(0,3,"Juan","Hongos","Martillo");
 
@@ -29,6 +31,12 @@ public class Primer_aplicacion {
         System.out.println("Tengo: " + jugador.getVidas() + " vidas");
         System.out.println(jugador.mostrarSaludo());
         System.out.println(jugador2.mostrarSaludo());
+        
+        //Uso del constructor Auto para crear nuevo objeto "miAuto"
+        Auto miAuto = new Auto(250, 5, "Rojo", "deportivo","2020","abc 232");
+        miAuto.setEncendido(false);
+        System.out.println(miAuto.encender_auto());
+        
     }
     
 }
