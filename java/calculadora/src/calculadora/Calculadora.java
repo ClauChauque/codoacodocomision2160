@@ -17,5 +17,4 @@ public class Calculadora {
         Operaciones operacion = new Operaciones(num1, num2, op);
         System.out.println("El resultado de la operación es: " + operacion.operacion());
     }
-    
 }
