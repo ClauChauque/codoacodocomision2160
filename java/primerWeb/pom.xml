@@ -21,25 +21,26 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
             <version>3.3.2</version>
         </dependency>
-    <!-- https://mvnrepository.com/artifact/org.glassfish.web/jstl-impl -->
+        <!-- https://mvnrepository.com/artifact/org.glassfish.web/jstl-impl -->
         <dependency>
             <groupId>org.glassfish.web</groupId>
             <artifactId>jstl-impl</artifactId>
             <version>1.2</version>
             <scope>runtime</scope>
         </dependency>
-    <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
+        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+
     </dependencies>
 
     <build>

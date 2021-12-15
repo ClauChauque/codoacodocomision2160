@@ -12,6 +12,25 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        
+        <!--directivas del server-->
+        <%! int num = 89; double num2 = 34.4;
+        double suma(){
+            return num+num2;
+        }
+        %>
+        <%
+            String nombre = "Claudia";
+            String usuario = request.getParameter("usuario");
+            out.println("<p>"+suma()+"</p>");
+        %>
+        
+        <h1>Hello <%= nombre%></h1>
+        <p><%java.util.Date fecha = new java.util.Date();%><%=fecha%></p>
+
     </body>
 </html>
+<!<!-- Este achivo se abre desde http://localhost:8080/primerWeb/ventas.jsp -->
+
+<!--Desde los archivos JSP pueden manejarse las interacciones cliente-servidor viendo y modificando ambos 
+aspectos del proyecto, el front (desde html) y el backend(desde netbeans)-->
