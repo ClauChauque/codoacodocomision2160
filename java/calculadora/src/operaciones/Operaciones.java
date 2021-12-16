@@ -13,18 +13,19 @@ public class Operaciones {
         this.op=op;
     }
     
-    //Creamos una función con if anidados
+    //Creamos una función con if anidados y lo reacomodamos en un Switch
     public float operacion(){
-        if(op.equals("+")){
-            return num1 + num2;
-        }else if(op.equals("-")){
-            return num1 - num2;
-        }else if(op.equals("*")){
-            return num1 * num2;
-        }else if(op.equals("/")){
-            return num1 / num2;
-        }else{
-        return 0;
+        switch (op) {
+            case "+":
+                return num1 + num2;
+            case "-":
+                return num1 - num2;
+            case "*":
+                return num1 * num2;
+            case "/":
+                return num1 / num2;
+            default:
+                return 0;
         }
     }
     /*A diferencia de las funciones, los metodos se encargan de modificar el valor 

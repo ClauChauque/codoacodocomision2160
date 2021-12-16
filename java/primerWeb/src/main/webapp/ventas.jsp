@@ -14,6 +14,7 @@
     <body>
         
         <!--directivas del server-->
+        <!-- (%!) se usa para crear métodos -->
         <%! int num = 89; double num2 = 34.4;
         double suma(){
             return num+num2;
@@ -25,7 +26,8 @@
             out.println("<p>"+suma()+"</p>");
         %>
         
-        <h1>Hello <%= nombre%></h1>
+        <!-- (%=) captura el valor de la variable "nombre" y muestra en pantalla-->
+        <h1>Hello <%= nombre%></h1> 
         <p><%java.util.Date fecha = new java.util.Date();%><%=fecha%></p>
 
     </body>
