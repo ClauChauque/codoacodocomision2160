@@ -1,4 +1,3 @@
-
 package clase3java;
 
 import departamento.Departamento;

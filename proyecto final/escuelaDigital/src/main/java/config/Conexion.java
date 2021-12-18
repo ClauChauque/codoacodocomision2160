@@ -14,6 +14,7 @@ public class Conexion {
         }
         return c;
     }
+    /*
     public static void main(String [] lelis) throws SQLException{
         Connection conexion = null;
         Conexion con = new Conexion();
@@ -32,5 +33,5 @@ public class Conexion {
             System.out.println("\n Id: "+id+"\n Nombre: "+nombre+"\n Apellido: "+apellido
                     +"\n Email: "+email+"\n Telefono: "+telefono);
         }
-    }
+    }*/
 }
