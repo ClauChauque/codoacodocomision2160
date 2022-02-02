@@ -4,6 +4,9 @@
     Author     : User
 --%>
 
+<%@page import="modelo.AlumnosDAO"%>
+<%@page import="java.util.List"%>
+<%@page import="modelo.Alumnos"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -28,7 +31,25 @@
                         <th>Eliminar</th>
                     </thead>
                     <tbody>
-                        
+                        <%
+                            List<Alumnos> resultado=null;
+                            AlumnosDAO alumno =new AlumnosDAO();
+                            resultado = alumno.listarAlumnos();
+                            
+                            for(int a = 0; a < resultado.size(); a++){
+                                String ruta ="AlumnosController?accion=modificar&id=" + resultado.get(a).getId();
+                                String rutaE ="AlumnosController?accion=eliminar&id=" + resultado.get(a).getId();
+                        %>
+                                <tr>
+                                    <td><%= resultado.get(a).getId()%></td>
+                                    <td><%= resultado.get(a).getNombre()%></td>
+                                    <td><%= resultado.get(a).getApellido()%></td>
+                                    <td><%= resultado.get(a).getEmail()%></td>
+                                    <td><%= resultado.get(a).getTelefono()%></td>
+                                    <td><a class="text-success" href=<%= ruta%>>X</a></td>
+                                    <td><a class="text-danger" href=<%= rutaE%>>X</a></td>
+                                </tr>
+                                
                     </tbody>
                 </table>
             </div>
